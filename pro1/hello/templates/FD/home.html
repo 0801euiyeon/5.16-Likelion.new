@@ -1,0 +1,8 @@
+{% load staticfiles %}
+<h1>hello</h1>
+<img src="{% static '도서관.jpg' %}"alt="">
+{% for hello in hello %}
+<h1>{{hello.title}}</h1>
+<img src="{{hello.image.url}}" alt="">
+<h2>{{hello.description}}</h2>
+{% endfor %}
